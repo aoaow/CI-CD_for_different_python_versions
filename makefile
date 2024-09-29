@@ -7,9 +7,7 @@ format:
 	black .
 
 lint:
-	ruff .
+	pylint .
 
 test:
-	pytest --nbval notebook.ipynb
-	pytest test_script.py
-	pytest test_lib.py
+	pytest test_hello.py
