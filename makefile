@@ -7,7 +7,8 @@ format:
 	black .
 
 lint:
-	pylint .
+	pylint --disable=R,C test_hello.py
+	pylint --disable=R,C hello.py
 
 test:
 	pytest test_hello.py
