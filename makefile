@@ -1,7 +1,8 @@
 .PHONY: install format lint test
 
 install:
-	pip install -r requirements.txt
+	pip install --upgrade pip &&\
+		pip install -r requirement.txt
 
 format:
 	black .
